@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    background-color: black;
+    color: whitesmoke;
+}
+header {
+    border: 1px solid whitesmoke;
+    display: flex;
+}
+
+header img {
+    flex: 2;
+}
+
+header div {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    flex: 1;
+}
+
+.link {
+    margin-right: 10px;
+    padding: 5px;
+    border: 1px solid whitesmoke;
+}
+
+section {
+    margin-top: 10px;
+}
+
+section > div {
+    border: 1px solid whitesmoke;
+}
+
+/* div {
+    background-color: red;
+    margin: auto;
+    width: 100px;
+} */
