@@ -5,61 +5,6 @@
         <a class="link">Euro-GBP Details</a>
     </div>
 </header>
-
 <section>
-    <h1>Currency Exchanger</h1>
-    <div>
-        <form novalidate>
-            <div style="flex: 1.5; flex-direction: column; justify-content: space-between">
-                <span>
-                    <label for="amount">Amount</label>
-                    <input type="number" name="amount" id="amount" [(ngModel)]="formElement.amount" />
-                </span>
-                <span>
-                    <input type="text" name="rate" id="rate" [(ngModel)]="formElement.rate" />
-                </span>
-            </div>
-            <div style="flex: 2; flex-direction: column">
-                <div>
-                    <span>
-                        <label for="from">From </label>
-                        <select name="from" [disabled]="!formElement.amount">
-                            <option value="EUR" selected>EUR</option>
-                            <option value="USB">USD</option>
-                            <option value="INR">INR</option>
-                            <option value="GBP">GBP</option>
-                        </select>
-                    </span>
-                    <span>
-                        <img src="../assets/icon/swap.svg" />
-                    </span>
-                    <span>
-                        <label for="to">To </label>
-                        <select name="to" [disabled]="!formElement.amount" [(ngModel)]="formElement.to">
-                            <option value="EUR">EUR</option>
-                            <option value="USD" selected>USD</option>
-                            <option value="INR">INR</option>
-                            <option value="GBP">GBP</option>
-                        </select>
-                    </span>
-                </div>
-                <div>
-                    <button [disabled]="!formElement.amount" (click)="showButton()">convert</button>
-                </div>
-                <div>
-                    <div>
-                        <input
-                            type="text"
-                            readonly="true"
-                            name="converted_value"
-                            [value]="formElement.convertedValue"
-                        />
-                    </div>
-                    <div>
-                        <button>More Details</button>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
+    <router-outlet></router-outlet>
 </section>

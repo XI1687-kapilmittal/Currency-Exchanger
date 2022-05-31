@@ -7,9 +7,10 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeadersInterceptor } from './interceptors/headers.interceptor';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
-    declarations: [AppComponent],
+    declarations: [AppComponent, HomeComponent],
     imports: [CommonModule, HttpClientModule, FormsModule, BrowserModule, AppRoutingModule],
     providers: [
         {
