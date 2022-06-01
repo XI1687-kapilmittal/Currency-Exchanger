@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
     constructor(private conversion: ConversionService) {}
 
     ngOnInit(): void {
+        //Avoid calling server while developing as I had only 100 request limit per month
         this.symbols = [
             'USD',
             'AED',

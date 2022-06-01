@@ -33,8 +33,20 @@ section > div {
     border: 1px solid whitesmoke;
 }
 
-/* div {
-    background-color: red;
-    margin: auto;
-    width: 100px;
-} */
+button {
+    background-color: blue;
+    width: -webkit-fill-available;
+    padding: 15px;
+}
+
+input {
+    width: -webkit-fill-available;
+    border: 1px solid whitesmoke;
+    padding: 15px;
+}
+
+select {
+    width: -webkit-fill-available;
+    padding: 15px;
+    background-color: gray;
+}
